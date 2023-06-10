@@ -23,6 +23,15 @@
     "typescript": "5.1.3"
   },
   "devDependencies": {
-    "@wzono/eslint-config": "^0.1.0"
+    "@wzono/eslint-config": "^0.1.0",
+    "simple-git-hooks": "^2.8.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": [
+      "eslint --fix --cache"
+    ]
   }
 }
