@@ -69,5 +69,10 @@
     "*.{js,jsx,ts,tsx,json}": [
       "eslint --fix --cache"
     ]
-  } 
+  },
+  "pnpm": {
+    "overrides": {
+      "globby": "$globby"
+    }
+  }
 }
